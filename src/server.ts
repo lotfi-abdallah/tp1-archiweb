@@ -17,6 +17,14 @@ app.get('/', (_req: Request, res: Response) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
+app.get('/produit/:id', (_req: Request, res: Response) => {
+    res.json({ produit: 'Produit: ' + _req.params.id, stock: 100 });
+});
+
+app.post('/produit', (req: Request, res: Response) => {
+    res.status(201).json({ message: 'Produit créé avec succès' });
+});
+
 const HTTP_PORT = 3188;
 const HTTPS_PORT = 3189;
 
