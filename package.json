@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lotfi-abdallah/tp1-archiweb/issues"
   },
-  "homepage": "https://github.com/lotfi-abdallah/tp1-archiweb#readme"
+  "homepage": "https://github.com/lotfi-abdallah/tp1-archiweb#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
